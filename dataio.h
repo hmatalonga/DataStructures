@@ -24,10 +24,15 @@ typedef struct dl_node {
     struct dl_node *next, *prev;
 } dl_node;
 
+// Binary Tree
+typedef struct btree_node {
+    int id;
+    struct btree_node *left, *right;
+} btree_node;
 
 /* Functions declarations
- * Sorted alphabetically, each start with same name
- * as the respective data structure
+ * Sorted alphabetically, each start with same
+ * prefix name as the respective data structure
 */
 
 // Singly Linked List
@@ -43,6 +48,7 @@ sl_node *slLast(sl_node *head);
 sl_node *slRemove(sl_node *head, int key);
 sl_node *slRemoveAt(sl_node *head, int index);
 sl_node *slSort(sl_node *head);
+void slPrint(sl_node *head);
 
 // Doubly linked list
 
