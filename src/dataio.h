@@ -9,7 +9,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-
 /* Data Structures */
 
 // Singly Linked List
@@ -30,7 +29,8 @@ typedef struct btree_node {
     struct btree_node *left, *right;
 } btree_node;
 
-/* Functions declarations
+/*
+ * Functions declarations
  * Sorted alphabetically, each start with same
  * prefix name as the respective data structure
 */
@@ -38,6 +38,7 @@ typedef struct btree_node {
 // Singly Linked List
 int slIndexOf(sl_node *head, int key);
 int slIsEmpty(sl_node *head);
+int slSize(sl_node *head);
 sl_node *slFind(sl_node *head, int key);
 sl_node *slFirst(sl_node *head);
 sl_node *slInsert(sl_node *head, int new_id);
